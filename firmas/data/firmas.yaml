@@ -1,0 +1,5 @@
+train: ../firmas/data/yolo/train/images
+val: ../firmas/data/yolo/valid/images
+
+nc: 1
+names: ['firma']

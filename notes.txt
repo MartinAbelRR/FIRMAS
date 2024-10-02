@@ -1,0 +1,5 @@
+- Entrenar con la data propia.
+py train.py --workers 1 --device 0 --batch-size 4 --data ../firmas/data/firmas.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights yolov7.pt --name yolov7-custom-final --hyp data/hyp.scratch.custom.yaml 
+
+- Testear el modelo.
+python detect.py --weights ../firmas/model/model_bcp_firmas.pt --conf 0.25 --img-size 640 --source ../firmas/data/yolo/test/58141201-NL.pdf.png
